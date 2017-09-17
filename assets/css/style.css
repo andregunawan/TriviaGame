@@ -1,0 +1,175 @@
+body {
+	background-image: url(../images/background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-header {
+	width: 30%;
+	height: 30%;
+	padding-top: 10px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+}
+
+h1 {
+	font-family: 'cooperplate' !important;
+	color: #ffcc00;
+	text-shadow: 2px 2px red;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+  	margin-top: 1px;
+}
+
+#gifDisplay {
+	width: 425px;
+	height: 344px;
+	margin-bottom: -200px;
+}
+
+
+.question {
+	font-family: 'cooperplate' !important;
+	color: #ffcc00;
+	font-size: 30px;
+	text-shadow: 2px 2px red;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+  	margin-top: 30px;
+  	margin-bottom: 30px;
+}
+
+.options {
+	margin-bottom: -120px;
+}
+
+p {
+	font-family: 'cooperplate' !important;
+	color: #ffcc00;
+	font-size: 40px;
+	text-shadow: 2px 2px red;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+  	text-transform: uppercase;
+}
+
+.start {
+	margin-top: 80px;
+}
+
+.startButton, .playAgainButton {
+	width: 300px;
+	height: 110px;
+}
+
+.timer, .timer-remaining {
+	font-family: 'cooperplate' !important;
+    font-size: 30px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 2px 2px red;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+  	margin-top: 80px;
+  }
+
+.result-text {
+	font-family: 'cooperplate' !important;
+	color: #ffcc00;
+	font-size: 30px;
+	text-shadow: 2px 2px red;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.result-gif {
+	margin-bottom: -50px;
+}
+
+/*START BUTTON HOVER*/
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*OPTIONS HOVER*/
+
+.hvr-shutter-out-vertical {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+  color: white;
+}
+.hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
