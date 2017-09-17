@@ -173,6 +173,7 @@ var	trivia 	=
 // FINAL RESULT PAGE
 	finalResult:function ()
 	{
+		// Hide everything from gameStart pages
 		stop();
 		$(".questionDisplay").css({"visibility": "hidden", "position": "absolute"});
 		$(".options").css({"visibility": "hidden", "position": "absolute"});
@@ -181,12 +182,11 @@ var	trivia 	=
 		$(".start").css({"visibility": "hidden", "position": "absolute"});
 		$(".timer").css({"visibility": "hidden", "position": "absolute"});
 		$(".timer-remaining").css({"visibility": "hidden", "position": "absolute"});
-
+		// Display the final result
 		$(".finalResult").css({"visibility": "visible", "position": "relative"});
 		$(".correctAnswers").css({"visibility": "visible", "position": "relative"});
 		$(".incorrectAnswers").css({"visibility": "visible", "position": "relative"});
 		$(".unanswered").css({"visibility": "visible", "position": "relative"});
-
 		$(".correctAnswers").html("<h1>Correct Answers : "+ trivia.correct +"</h1>");
 		$(".incorrectAnswers").html("<h1>Incorrect Answers : "+ trivia.wrong +"</h1>");
 		$(".unanswered").html("<h1>Unanswered : "+ trivia.unanswered +"</h1>");
