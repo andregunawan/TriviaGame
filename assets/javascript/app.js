@@ -104,6 +104,7 @@ var	trivia 	=
 		$(".finalResult").css({"visibility": "hidden", "position": "absolute"});
 		$(".playAgainButton").css({"visibility": "hidden", "position": "absolute"});
 		$(".timer").html("10");
+		$("#gifDisplay").attr("src", " ");
 
 	},
 
